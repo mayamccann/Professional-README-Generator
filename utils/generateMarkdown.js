@@ -9,7 +9,12 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  switch (license) {
+    case "MIT":
+      return "[MIT Link](https://www.opensource.org/license/MIT)"
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
