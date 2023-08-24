@@ -57,7 +57,17 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+let outPutDirectory = "dist"
+if (!fs.existsSync(outPutDirectory)) {
+    fs.mkdirSync(outPutDirectory);
+}
+fs.writeFile('${outPutDirectory}/S{fileName}', generateMarkdown(data), 'utf8', (err) => {
+if (err) {
+    console.error('Error writing file:', err);
+} else {
+    console.log('README successfuly made!');
+}
+});
 }
 
 // TODO: Create a function to initialize app
