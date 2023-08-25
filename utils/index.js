@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 
-const generateMarkdown = require('./utils/generateMarkdown.js')
+const generateMarkdown = require('./utils/generateMarkdown.js');
 const inquirer = require('inquirer');
-const fs = require('fs')
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -10,6 +10,14 @@ const questions = [
     type: 'input',
     message: 'What is the title for the project?',
     name: 'title',
+    validate: titleInput => {
+        if (titleInput) {
+            return true;
+} else {
+    console.log('Enter the title.');
+    return false;
+}
+    }
 },
 
 { 
@@ -53,6 +61,14 @@ const questions = [
     type: 'input',
     message: 'What is your GitHub username?',
     name: 'githubusername',
+    validate: githubInput => {
+        if (githubInput) {
+            return true;
+        } else {
+            console.log('Enter your GitHub username.');
+            return false;
+        }
+    }
 },
 
 ];
