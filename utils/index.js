@@ -95,3 +95,7 @@ init();
 .then(writeFileResponse => {
     console.log(writeFileResponse.message);
 })
+
+.catch(err => {
+    console.log(err);
+})
