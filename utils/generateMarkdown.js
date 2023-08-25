@@ -1,10 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  switch (license) {
-  case "MIT":
-    return "![License](https://img.shields.io/badge/License-MIT-blue.svg)";
-  }
+  if (license !== 'no lincense') {
+    return 
+![badge](https://img.sheilds.io/badge/license-${license}-blue)
+;
+}else{
+  return '';
+}
 }
 
 // TODO: Create a function that returns the license link
