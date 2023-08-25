@@ -52,12 +52,28 @@ const questions = [
     type: 'input',
     message: 'What is the user story of the project?',
     name: 'userstory',
+    validate: userstoryInput => {
+        if (userstoryInputInput) {
+            return true;
+        } else {
+            console.log('Enter the User Story.');
+            return false;
+        }
+    }
 },
 
 {
     type: 'input',
     message: 'What is the acceptance criteria of the project?',
     name: 'acceptancecriteria',
+    validate: acceptancecriteriaInput => {
+        if (acceptancecriteriaInput) {
+            return true;
+        } else {
+            console.log('Enter the acceptance criteria.');
+            return false;
+        }
+    }
 },
 
 { 
