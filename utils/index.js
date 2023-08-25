@@ -105,9 +105,10 @@ const questions = [
 },
 
 {
-    type: 'input',
-    message: 'What is the user story of the project?',
-    name: 'userstory',
+    type: 'list',
+    message: 'What license is used for the project?',
+    name: 'license',
+    choices: ['no license', 'mit', 'agpl', 'apache']
 },
 
 {
