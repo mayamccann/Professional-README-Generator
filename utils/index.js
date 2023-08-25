@@ -36,6 +36,20 @@ const questions = [
 
 {
     type: 'input',
+    message: 'What is your project and the purpose of it?',
+    name: 'purpose',
+    validate: purposeInput => {
+        if (purposeInput) {
+            return true;
+        } else {
+            console.log('Enter what your project is and the purpose.');
+            return false;
+        }
+    }
+}, 
+
+{
+    type: 'input',
     message: 'What is the user story of the project?',
     name: 'userstory',
 },
