@@ -58,19 +58,21 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-let outPutDirectory = "dist"
-if (!fs.existsSync(outPutDirectory)) {
-    fs.mkdirSync(outPutDirectory);
-}
-fs.writeFile('${outPutDirectory}/S{fileName}', generateMarkdown(data), 'utf8', (err) => {
-if (err) {
-    console.error('Error writing file:', err);
-} else {
-    console.log('README successfuly made!');
-}
+const writeFile = fileContent => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('/dist/generated-README.md', fileContent, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            resolve ({
+                ok: true,
+                message: 'File made'
+        });
+    });
 });
-}
+};
 
 // TODO: Create a function to initialize app
 const init = () => {
