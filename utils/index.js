@@ -127,6 +127,20 @@ const questions = [
 },
 
 {
+    type: 'input',
+    message: 'Instructions on how to test the app.',
+    name: 'test',
+    validate: testInput => {
+        if (testInput) {
+            return true;
+        } else {
+            console.log('Enter test intructions for the project.');
+            return false;
+        }
+    }
+}, 
+
+{
     type: 'list',
     message: 'What license is used for the project?',
     name: 'license',
