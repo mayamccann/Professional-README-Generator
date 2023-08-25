@@ -80,13 +80,28 @@ const questions = [
     type: 'input',
     message: 'What is the installation of the project?',
     name: 'installation',
-    
+    validate: installInput => {
+        if (installInput) {
+            return true;
+        } else {
+            console.log('Enter your installation of the project.');
+            return false;
+        }
+    }
 },
 
 {
     type: 'input',
     message: 'What is the usage of the project?',
-    name: 'usage'
+    name: 'usage',
+    validate: usageInput => {
+        if (usageInput) {
+            return true;
+        } else {
+            console.log('Enter your use instructions.');
+            return false;
+        }
+    }
 },
 
 {
