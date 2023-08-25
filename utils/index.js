@@ -59,6 +59,20 @@ const questions = [
 
 {
     type: 'input',
+    message: 'What is your email?',
+    name: 'email',
+    validate: githubInput => {
+        if (githubInput) {
+            return true;
+        } else {
+            console.log('Enter your email.');
+            return false;
+        }
+    }
+}, 
+
+{
+    type: 'input',
     message: 'What is your GitHub username?',
     name: 'githubusername',
     validate: githubInput => {
