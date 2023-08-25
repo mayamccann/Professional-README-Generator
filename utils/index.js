@@ -105,6 +105,28 @@ const questions = [
 },
 
 {
+    type: 'input',
+    message: 'Guidelines for contributing.',
+    name: 'contribute',
+    when: ({ confirmContributers}) => {
+
+    if (confirmContributers) {
+        return true;
+    } else {
+        return false;
+    }
+    }, 
+    validate: contributerInput => {
+        if (contributerInput) {
+            return true;
+        } else {
+            console.log('Enter contributer guidelines');
+            return false;
+        }
+    }
+},
+
+{
     type: 'list',
     message: 'What license is used for the project?',
     name: 'license',
