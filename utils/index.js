@@ -24,6 +24,14 @@ const questions = [
     type: 'input',
     message: 'What is the background and description for the project?',
     name: 'description',
+    validate: descriptionInput => {
+        if (descriptionInput) {
+            return true;
+} else {
+    console.log('Describe the background and description of your project.');
+    return false;
+}
+    }
 },
 
 {
