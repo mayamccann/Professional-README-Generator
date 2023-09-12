@@ -69,6 +69,7 @@ const questions = () => {
 },
 
 {
+    //License, choices
     type: 'list', 
     name: 'license',
     message: 'What license will be used for your project?',
@@ -84,3 +85,17 @@ const questions = () => {
     }
 },
 
+{
+    //installation
+    type: 'input',
+    name: 'install',
+    message: 'What are the steps to install the project?',
+    validate: nameInput => {
+        if (nameInput) {
+            return true;
+        } else {
+            console.log('Enter steps required to install project.');
+            return false;
+        }
+    }
+},
