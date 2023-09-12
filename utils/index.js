@@ -211,18 +211,13 @@ const init = () => {
     })
 }
 
-// Function call to initialize app
-init();
+// function call to initialize program
+questions ()
 
-.then(readmeData => {
-    console.log(readmeData);
-    return generateMarkdown(readmeData);
+// get user answers
+.then(answers => {
+    return generatePage(answers);
 })
-
-.then(pageMD => {
-    return writeFile(pageMD);
-})
-
 
 // using data to display on page
 .then(data => {
