@@ -152,3 +152,9 @@ questions()
 .then(answers => {
     return generatePage(answers);
 })
+
+// Use data to display on pg
+.then(data => {
+    return writeFile(data);
+})
+
