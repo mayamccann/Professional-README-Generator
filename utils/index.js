@@ -131,3 +131,17 @@ const questions = () => {
 }
     ]);
 };
+
+// Function for writing README file, use of file system
+const writeFile = data => {
+    fs.writeFile('README.md', data, err => {
+        // possibility of an error
+    if (err) {
+        console.log(err);
+        return;
+        //once README is created
+    } else {
+        console.log("The README has been successfully made!")
+    }
+    })
+};
