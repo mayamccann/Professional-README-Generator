@@ -122,3 +122,12 @@ const questions = () => {
     message: 'What command should be run to run tests?',
     default: 'npm test'
 },
+
+{
+    //contributors
+    type: 'input',
+    name: 'contributors',
+    message: 'What does the user need to know about contributing to the repository?'
+}
+    ]);
+};
