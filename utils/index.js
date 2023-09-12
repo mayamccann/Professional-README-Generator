@@ -8,7 +8,12 @@ const generatePage = require('./utils/generateMarkdown.js');
 
 
 // TODO: Create an array of questions for user input
-const questions = [
+const questions = () => {
+
+    //use of inquirer for prompt questions to users
+
+    return inquirer.prompt ([
+
 {
     type: 'input',
     message: 'What is the title for the project?',
@@ -218,10 +223,13 @@ init();
     return writeFile(pageMD);
 })
 
-.then(writeFileResponse => {
-    console.log(writeFileResponse.message);
+
+// using data to display on page
+.then(data => {
+    return writeFile(data);
 })
 
+// catching errors
 .catch(err => {
-    console.log(err);
+    console.log(err)
 })
