@@ -99,3 +99,18 @@ const questions = () => {
         }
     }
 },
+
+{
+    //usage
+    type: 'input',
+    name: 'usage',
+    message: 'How do you use the app?',
+    validate: nameInput => {
+        if (nameInput) {
+            return true;
+        } else {
+            console.log('Enter usage description.');
+            return false;
+        }
+    }
+},
