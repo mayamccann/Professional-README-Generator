@@ -68,5 +68,19 @@ const questions = () => {
     }
 },
 
-
+{
+    type: 'list', 
+    name: 'license',
+    message: 'What license will be used for your project?',
+    choices: ['MIT', 'GNU'],
+    default: ["MIT"],
+    validate: nameInput => {
+        if (nameInput) {
+            return true;
+        } else {
+        console.log('Choose a license.');
+        return false;
+        }
+    }
+},
 
