@@ -24,6 +24,7 @@ const questions = () => {
     },
 
 {
+    //Email
     type: 'input',
     name: 'email',
     message: 'What is your email?',
@@ -38,6 +39,7 @@ const questions = () => {
 },
 
 {
+    //Project name
     type: 'input',
     name: 'title',
     message: 'What is your project name?',
@@ -51,5 +53,20 @@ const questions = () => {
     }
 },
         
+{
+    //Description of the Project
+    type: 'input',
+    name: 'description',
+    message: 'Description of the project.',
+    validate: nameInput => {
+        if (nameInput) {
+            return true;
+        } else {
+            console.log('Enter description of project.');
+            return false;
+        }
+    }
+},
+
 
 
