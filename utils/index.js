@@ -9,7 +9,7 @@ const generatePage = require('./utils/generateMarkdown.js');
 const questions = () => {
     return inquirer.createPromptModule([
     {
-
+        //GitHub Username
         type: 'input',
         name: 'github',
         message: 'What is your GitHub username?',
@@ -22,7 +22,21 @@ const questions = () => {
             }
         }
     },
-    
+
+{
+    type: 'input',
+    name: 'email',
+    message: 'What is your email?',
+    validate: nameInput => {
+        if (nameInput) {
+            return true;
+        } else {
+            console.log('Enter your email.');
+            return false;
+        }
+    }
+},
+
 
         
 
