@@ -145,3 +145,10 @@ const writeFile = data => {
     }
     })
 };
+
+// Function call --> initializing program
+questions()
+//retrieving user answers
+.then(answers => {
+    return generatePage(answers);
+})
