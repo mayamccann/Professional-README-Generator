@@ -158,3 +158,7 @@ questions()
     return writeFile(data);
 })
 
+// errors
+.catch(err => {
+    console.log(err)
+})
