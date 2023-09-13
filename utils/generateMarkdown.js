@@ -11,4 +11,17 @@ function renderLicenseBadge(license) {
         return "";
   }
 }
- 
+
+//Returning license link
+function renderLicenseBadge(license) {
+  switch (license) {
+    case "MIT":
+      return "[MIT Link](https://www.opensource.org/licenses/MIT)"
+      case "Apache":
+        return "[Apache Link](https://www.apache.org/licenses/LICNSE-2.0)"
+        case "GNU":
+          return "[GNU Link](https://www.gnu.org/licenses/gpl-3.0.en/html)"
+          default:
+            return "";
+  }
+}
