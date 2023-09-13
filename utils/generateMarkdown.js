@@ -34,3 +34,6 @@ function renderLicenseBadge(license) {
     return "";
   }
 }
+
+// Generating Markdown for the README
+
