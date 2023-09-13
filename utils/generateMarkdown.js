@@ -25,3 +25,12 @@ function renderLicenseBadge(license) {
             return "";
   }
 }
+
+// Function returns license section of README
+function renderLicenseBadge(license) {
+  if (license !== "none") {
+    return 'This project is licensed ${renderLicenseBadge(license)}, ${renderLicenseLink(license)}'
+  } else {
+    return "";
+  }
+}
