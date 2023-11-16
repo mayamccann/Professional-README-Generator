@@ -59,7 +59,7 @@ const fs = require("fs");
 function init() {}
 
 const markdown = generateMarkdown
-writeToFile
+writeToFile("README.md");
 
 // Function call to initialize app
 init();
