@@ -30,6 +30,12 @@ const questions = [
     name: "installation",
 }, 
 
+{ 
+    type: "input",
+    message: "For your application, what is the usage and technologies used?",
+    name: "usage",
+}, 
+
 ];
 
 // TODO: Create a function to write README file
