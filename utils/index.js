@@ -42,6 +42,12 @@ const questions = [
     name: "contributors",
 }, 
 
+{ 
+    type: "input",
+    message: "For your application, what your github?",
+    name: "github",
+}, 
+
 ];
 
 // TODO: Create a function to write README file
