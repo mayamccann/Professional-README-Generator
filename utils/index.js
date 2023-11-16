@@ -55,6 +55,7 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 const fs = require("fs");
+console.log("Successful") 
 
 // TODO: Create a function to initialize app
 
