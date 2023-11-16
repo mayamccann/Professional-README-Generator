@@ -10,7 +10,19 @@ const questions = [
     type: "input",
     message: "For your application, what is the title?",
     name: "title",
-}
+}, 
+
+{ 
+    type: "input",
+    message: "For your application, what is the background?",
+    name: "background",
+}, 
+
+{ 
+    type: "input",
+    message: "For your application, what is the description?",
+    name: "description",
+}, 
 
 ];
 
