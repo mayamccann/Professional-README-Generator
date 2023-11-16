@@ -24,6 +24,12 @@ const questions = [
     name: "description",
 }, 
 
+{ 
+    type: "input",
+    message: "For your application, what is the installation?",
+    name: "installation",
+}, 
+
 ];
 
 // TODO: Create a function to write README file
