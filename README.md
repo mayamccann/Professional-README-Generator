@@ -7,8 +7,11 @@ For this assignment, the goal is to create a Professional README Generator that 
 ##  Description 
 This application allows users to generate a README file using the command-line application to generate one, which allows the developer more time to complete the project. This project creates a command-line application that dynamically generates a professional README.md from the user's input using the Inquirer package.
 
+## Usage and Technologies Used 
 
-
+- Node.js
+- Inquirer package
+- GitHub
 
 ## Credits
 
@@ -16,9 +19,8 @@ Code Source : applied throughout the entire process of building to our starter c
 
 ## Review
 
-Deployed URL : 
-
 GitHub URL : https://github.com/mayamccann/Professional-README-Generator
 
-
-🏆 Module 9 Challenge from the UConn Coding Bootcamp Cohort May 2023 🏆
+## UConn Coding Bootcamp Cohort May 2023
+Module 9 Challenge
+Node.js Challenge: Professional README Generator
