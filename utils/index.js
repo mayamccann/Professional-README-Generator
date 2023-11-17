@@ -63,7 +63,7 @@ console.log("Successful")
  async function init() {
 
 inquirer.prompt(questions).then(answers) 
-const markdown = generateMarkdown
+const markdown = generateMarkdown(response);
 
 writeToFile("README.md")
 }
