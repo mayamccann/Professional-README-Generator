@@ -52,8 +52,20 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
+function writeToFile(fileName, data) {}
+//fs is for writing the file with fileName, from modules
+
+fs.writeFile(fileName, data, (err) => {
+    if (err) {
+        console.error(err);
+    } else {
+    })
+}
+
+
+
+//is this code even needed? delete?
 const fs = require("fs");
 console.log("Successful") 
 
